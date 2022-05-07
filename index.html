@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+   <script src="/script.js"></script>
+</head>
+<body>
+   <form name="calcform" method="post" action="">
+    <fieldset>
+       <legend>Calculadora x10 x100 x 1000</legend>
+ 
+       <label for="valor1">Digite o valor <strong>1</strong>:</label>
+       <input type="number" name="valor1" id="valor1" />
+ 
+       <label for="oper">Selecione a operação:</label>
+       <select name="oper" id="oper">
+          <option value="multdez">Multiplicar por 10</option>
+          <option value="multcem">Multiplicar por 100</option>
+          <option value="multmil">Multiplicar por 1000</option>
+       </select>
+
+       <label for="res">Resultado:</label>
+       <input type="text" name="res" id="res" />
+ 
+       <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+    </fieldset>
+ </form>
+</body>
+</html>
+
+
